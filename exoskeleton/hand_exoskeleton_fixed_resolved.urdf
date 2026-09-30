@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="hand_exoskeleton">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0017131 0.0042898 0.097406"
+        rpy="0 0 0" />
+      <mass
+        value="0.033122" />
+      <inertia
+        ixx="2.1354E-05"
+        ixy="4.8898E-07"
+        ixz="6.6895E-07"
+        iyy="6.7476E-05"
+        iyz="3.7413E-07"
+        izz="5.928E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="thumb_1">
+    <inertial>
+      <origin
+        xyz="-4.0169E-10 0.0035173 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.0010411" />
+      <inertia
+        ixx="3.3219E-08"
+        ixy="9.2883E-15"
+        ixz="-8.945E-13"
+        iyy="1.3967E-08"
+        iyz="-2.7155E-15"
+        izz="3.3469E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_1"
+    type="revolute">
+    <origin
+      xyz="-0.057768 -0.126 0.0035333"
+      rpy="1.5708 -0.84514 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="thumb_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="thumb_2">
+    <inertial>
+      <origin
+        xyz="-0.015381288390585 0.000286148005553599 -0.00724551933577044"
+        rpy="0 0 0" />
+      <mass
+        value="0.0012624505122221" />
+      <inertia
+        ixx="2.89951717276263E-08"
+        ixy="2.39296436230723E-09"
+        ixz="1.8837980204128E-08"
+        iyy="1.18822309268794E-07"
+        iyz="-1.88036078986098E-09"
+        izz="1.05551573405293E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.005"
+      rpy="1.5708 0.62446 0" />
+    <parent
+      link="thumb_1" />
+    <child
+      link="thumb_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="thumb_3">
+    <inertial>
+      <origin
+        xyz="0.0191955428731017 5.0789958281755E-06 1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.00140081576901343" />
+      <inertia
+        ixx="2.79157115171481E-08"
+        ixy="-1.06250293178223E-10"
+        ixz="-6.78288102293483E-23"
+        iyy="2.96503954711887E-07"
+        iyz="0"
+        izz="3.13310469428696E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_3"
+    type="revolute">
+    <origin
+      xyz="-0.022 0 -0.0005"
+      rpy="2.1128 0 -1.5708" />
+    <parent
+      link="thumb_2" />
+    <child
+      link="thumb_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="thumb_4">
+    <inertial>
+      <origin
+        xyz="-0.000113636363636618 0.0164841139604023 -0.0137302854157339"
+        rpy="0 0 0" />
+      <mass
+        value="0.00341156571529148" />
+      <inertia
+        ixx="5.53807967995221E-07"
+        ixy="-2.64697796016969E-22"
+        ixz="-1.52201232709757E-22"
+        iyy="6.41544558583946E-07"
+        iyz="1.31855325208832E-07"
+        izz="6.70871325564102E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_4"
+    type="revolute">
+    <origin
+      xyz="0.034053 0 0"
+      rpy="0.16807 0 -1.5708" />
+    <parent
+      link="thumb_3" />
+    <child
+      link="thumb_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="thumb_5">
+    <inertial>
+      <origin
+        xyz="0.000113634107682659 -1.33435529292569E-09 0.0114169119192619"
+        rpy="0 0 0" />
+      <mass
+        value="0.00227945252202351" />
+      <inertia
+        ixx="2.01290003679054E-07"
+        ixy="6.1717902662865E-13"
+        ixz="1.71429135384058E-16"
+        iyy="3.2637587523471E-07"
+        iyz="1.71341979598078E-14"
+        izz="3.7172425902003E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/thumb_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_5"
+    type="revolute">
+    <origin
+      xyz="0 0.03 -0.01675"
+      rpy="2.5021 0 -3.1416" />
+    <parent
+      link="thumb_4" />
+    <child
+      link="thumb_5" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="index_1">
+    <inertial>
+      <origin
+        xyz="-0.00735033465863367 0 0.0114562602339333"
+        rpy="0 0 0" />
+      <mass
+        value="0.000783763629788619" />
+      <inertia
+        ixx="1.80629475870714E-08"
+        ixy="0"
+        ixz="-1.0641487886225E-08"
+        iyy="4.03996865435207E-08"
+        iyz="6.61744490042422E-24"
+        izz="3.54518230543167E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_1"
+    type="revolute">
+    <origin
+      xyz="-0.031768 -0.076 0.012033"
+      rpy="0 0 -1.0194" />
+    <parent
+      link="base_link" />
+    <child
+      link="index_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="index_2">
+    <inertial>
+      <origin
+        xyz="-4.16333634234434E-17 0.024059601521761 -0.0142476545993573"
+        rpy="0 0 0" />
+      <mass
+        value="0.00366398831306281" />
+      <inertia
+        ixx="8.4347220340035E-07"
+        ixy="5.29395592033938E-23"
+        ixz="-5.29395592033938E-23"
+        iyy="6.84472840565356E-07"
+        iyz="2.44938929881946E-07"
+        izz="9.22155069169525E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_2"
+    type="revolute">
+    <origin
+      xyz="-0.014441 0 0.005"
+      rpy="0.14132 0 1.5708" />
+    <parent
+      link="index_1" />
+    <child
+      link="index_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="index_3">
+    <inertial>
+      <origin
+        xyz="3.92912907010157E-06 -8.67361737988404E-19 0.0150142403107443"
+        rpy="0 0 0" />
+      <mass
+        value="0.00305111431772374" />
+      <inertia
+        ixx="3.46008567639873E-07"
+        ixy="-3.30872245021211E-24"
+        ixz="1.3729724249328E-08"
+        iyy="5.84058258957531E-07"
+        iyz="8.60267837055149E-23"
+        izz="4.98761927669247E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_3"
+    type="revolute">
+    <origin
+      xyz="0 0.04 -0.018133"
+      rpy="1.9812 0 3.1416" />
+    <parent
+      link="index_2" />
+    <child
+      link="index_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="index_4">
+    <inertial>
+      <origin
+        xyz="-2.90844731631879E-09 1.05068445784007E-09 0.00866406161240025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00180020171627573" />
+      <inertia
+        ixx="1.06793691358943E-07"
+        ixy="1.10421932226002E-13"
+        ixz="-3.78968441377192E-15"
+        iyy="1.6877801909481E-07"
+        iyz="5.9715796377823E-15"
+        izz="2.07741675422324E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/index_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0.029"
+      rpy="-0.20757 0 0" />
+    <parent
+      link="index_3" />
+    <child
+      link="index_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="middle_1">
+    <inertial>
+      <origin
+        xyz="-0.00735033465863368 -3.46944695195361E-18 0.0114562602339332"
+        rpy="0 0 0" />
+      <mass
+        value="0.00078376362978862" />
+      <inertia
+        ixx="1.80629475870714E-08"
+        ixy="-4.54949336904165E-24"
+        ixz="-1.0641487886225E-08"
+        iyy="4.03996865435208E-08"
+        iyz="-2.48154183765908E-24"
+        izz="3.54518230543168E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_1"
+    type="revolute">
+    <origin
+      xyz="-0.012768 -0.076 0.012033"
+      rpy="0 0 -1.326" />
+    <parent
+      link="base_link" />
+    <child
+      link="middle_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="middle_2">
+    <inertial>
+      <origin
+        xyz="-1.31838984174237E-16 0.0278410190897377 -0.013998866492694"
+        rpy="0 0 0" />
+      <mass
+        value="0.00376398831306281" />
+      <inertia
+        ixx="1.01999089573883E-06"
+        ixy="-5.29395592033938E-23"
+        ixz="9.51257704435982E-23"
+        iyy="6.93875648152382E-07"
+        iyz="2.96893325851953E-07"
+        izz="1.09093762058764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_2"
+    type="revolute">
+    <origin
+      xyz="-0.014441 0 0.005"
+      rpy="0.054299 0 1.5708" />
+    <parent
+      link="middle_1" />
+    <child
+      link="middle_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="middle_3">
+    <inertial>
+      <origin
+        xyz="5.61071694500301E-06 -1.73472347597681E-18 0.0176018355227705"
+        rpy="0 0 0" />
+      <mass
+        value="0.00325060453792854" />
+      <inertia
+        ixx="4.35080987106542E-07"
+        ixy="-7.61006163548785E-23"
+        ixz="1.60217670257991E-08"
+        iyy="7.0659363102284E-07"
+        iyz="0"
+        izz="5.35549717271299E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_3"
+    type="revolute">
+    <origin
+      xyz="0 0.045 -0.018133"
+      rpy="1.8625 0 3.1416" />
+    <parent
+      link="middle_2" />
+    <child
+      link="middle_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="middle_4">
+    <inertial>
+      <origin
+        xyz="-4.58551465201684E-09 3.08441853308361E-09 0.00866405378000682"
+        rpy="0 0 0" />
+      <mass
+        value="0.00180019724801593" />
+      <inertia
+        ixx="1.06793563578894E-07"
+        ixy="1.39774840868123E-13"
+        ixz="-1.09439624262616E-14"
+        iyy="1.68777582430186E-07"
+        iyz="9.98535577629409E-15"
+        izz="2.07741299257663E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/middle_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0.034"
+      rpy="-0.81303 0 3.1416" />
+    <parent
+      link="middle_3" />
+    <child
+      link="middle_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="ring_1">
+    <inertial>
+      <origin
+        xyz="-0.0073503346586337 1.73472347597681E-17 0.0114562602339332"
+        rpy="0 0 0" />
+      <mass
+        value="0.00078376362978862" />
+      <inertia
+        ixx="1.80629475870714E-08"
+        ixy="4.31167894293266E-23"
+        ixz="-1.0641487886225E-08"
+        iyy="4.03996865435208E-08"
+        iyz="2.04727201606874E-23"
+        izz="3.54518230543168E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_1"
+    type="revolute">
+    <origin
+      xyz="0.0062323 -0.076 0.012033"
+      rpy="0 0 -1.6513" />
+    <parent
+      link="base_link" />
+    <child
+      link="ring_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="ring_2">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-18 0.0223883827931573 -0.0126100179311865"
+        rpy="0 0 0" />
+      <mass
+        value="0.00341980542455364" />
+      <inertia
+        ixx="6.77699861369688E-07"
+        ixy="1.68744844960818E-22"
+        ixz="-8.59233861289457E-23"
+        iyy="5.35055194941358E-07"
+        iyz="1.87346955725523E-07"
+        izz="7.58297091900179E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_2"
+    type="revolute">
+    <origin
+      xyz="-0.014441 0 0.005"
+      rpy="-0.023782 0 1.5708" />
+    <parent
+      link="ring_1" />
+    <child
+      link="ring_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="ring_3">
+    <inertial>
+      <origin
+        xyz="1.21430643318376E-17 1.73472347597681E-18 -0.0163165567997112"
+        rpy="0 0 0" />
+      <mass
+        value="0.00298170844623832" />
+      <inertia
+        ixx="3.62736699946158E-07"
+        ixy="7.52734357423255E-23"
+        ixz="-1.32348898008484E-22"
+        iyy="5.77110394077842E-07"
+        iyz="5.29395592033938E-23"
+        izz="4.12732994884571E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_3"
+    type="revolute">
+    <origin
+      xyz="0 0.0375 -0.016"
+      rpy="1.253 0 0" />
+    <parent
+      link="ring_2" />
+    <child
+      link="ring_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="ring_4">
+    <inertial>
+      <origin
+        xyz="-0.000249995864636487 -2.3852624593361E-09 0.00856825857722845"
+        rpy="0 0 0" />
+      <mass
+        value="0.00167975088196594" />
+      <inertia
+        ixx="8.76227088940294E-08"
+        ixy="1.38358672142365E-13"
+        ixz="2.5974359923928E-15"
+        iyy="1.38884056727081E-07"
+        iyz="-6.07810804664783E-15"
+        izz="1.61145150186395E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/ring_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_4"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.031"
+      rpy="2.7383 0 0" />
+    <parent
+      link="ring_3" />
+    <child
+      link="ring_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="pinky_1">
+    <inertial>
+      <origin
+        xyz="-0.00735033465863369 1.38777878078145E-17 0.0114562602339332"
+        rpy="0 0 0" />
+      <mass
+        value="0.000783763629788619" />
+      <inertia
+        ixx="1.80629475870714E-08"
+        ixy="7.03103520670074E-24"
+        ixz="-1.0641487886225E-08"
+        iyy="4.03996865435208E-08"
+        iyz="8.27180612553028E-24"
+        izz="3.54518230543168E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pinky_1"
+    type="revolute">
+    <origin
+      xyz="0.025232 -0.076 0.012033"
+      rpy="0 0 -2.0496" />
+    <parent
+      link="base_link" />
+    <child
+      link="pinky_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="pinky_2">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-17 0.0223877919286616 -0.0124498526206826"
+        rpy="0 0 0" />
+      <mass
+        value="0.00340179743650419" />
+      <inertia
+        ixx="6.68659180252523E-07"
+        ixy="-3.17637355220363E-22"
+        ixz="9.92616735063633E-23"
+        iyy="5.00032690870292E-07"
+        iyz="1.87285819164285E-07"
+        izz="7.32014684735375E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pinky_2"
+    type="revolute">
+    <origin
+      xyz="-0.014441 0 0.005"
+      rpy="-0.37284 0 1.5708" />
+    <parent
+      link="pinky_1" />
+    <child
+      link="pinky_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="pinky_3">
+    <inertial>
+      <origin
+        xyz="-1.04083408558608E-16 3.46944695195361E-18 -0.011674513336591"
+        rpy="0 0 0" />
+      <mass
+        value="0.00256166315140216" />
+      <inertia
+        ixx="2.17160330734614E-07"
+        ixy="1.05879118406788E-22"
+        ixz="-6.61744490042422E-24"
+        iyy="3.68383841299898E-07"
+        iyz="2.64697796016969E-23"
+        izz="3.21809407063204E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pinky_3"
+    type="revolute">
+    <origin
+      xyz="0 0.0375 -0.016"
+      rpy="1.0942 0 0" />
+    <parent
+      link="pinky_2" />
+    <child
+      link="pinky_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="pinky_4">
+    <inertial>
+      <origin
+        xyz="2.37458491064713E-09 -7.22871188255092E-10 0.00710876166022689"
+        rpy="0 0 0" />
+      <mass
+        value="0.00152093012196684" />
+      <inertia
+        ixx="6.79004436334258E-08"
+        ixy="1.09359589234469E-13"
+        ixz="-3.26388993350957E-15"
+        iyy="1.05982378945359E-07"
+        iyz="-1.70281465959277E-15"
+        izz="1.24624941640243E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/pinky_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pinky_4"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.022"
+      rpy="-2.8295 0 3.1416" />
+    <parent
+      link="pinky_3" />
+    <child
+      link="pinky_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="end_1">
+    <inertial>
+      <origin
+        xyz="0.0011624663890566 -0.0016628848349735 -0.0017638826652672"
+        rpy="0 0 0" />
+      <mass
+        value="0.0257449860018" />
+      <inertia
+        ixx="2.70961366472658E-05"
+        ixy="3.44298604045694E-08"
+        ixz="-6.91970218354525E-09"
+        iyy="3.31440488618488E-05"
+        iyz="-1.47737177899194E-07"
+        izz="5.78794503941228E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/end_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/end_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end_1"
+    type="revolute">
+    <origin
+      xyz="0 -0.146 0.0020333"
+      rpy="-3.1416 -1.407 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="end_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+  <link
+    name="end_2">
+    <inertial>
+      <origin
+        xyz="-3.55357955248922E-06 -0.000927760322901972 -0.021909485718219"
+        rpy="0 0 0" />
+      <mass
+        value="0.0287885548448216" />
+      <inertia
+        ixx="3.39772831586044E-05"
+        ixy="1.53048265657011E-19"
+        ixz="-1.3976043629696E-20"
+        iyy="3.77902650316147E-05"
+        iyz="-5.12540003345406E-08"
+        izz="6.57115828181033E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/end_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.737254901960784 0.686274509803922 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/icrs/hand_ws/hand exoskeleton.SLDASM/meshes/end_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end_2"
+    type="revolute">
+    <origin
+      xyz="0 -0.0051937 -0.0175"
+      rpy="-0.17149 0 0" />
+    <parent
+      link="end_1" />
+    <child
+      link="end_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5" />
+  </joint>
+</robot>

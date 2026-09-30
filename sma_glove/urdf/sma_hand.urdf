@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<robot name="sma_glove_hand">
+
+  <material name="skin"><color rgba="0.9 0.75 0.65 1"/></material>
+  <material name="dark"><color rgba="0.2 0.2 0.2 1"/></material>
+
+  <link name="palm">
+    <visual>
+      <geometry><box size="0.09 0.09 0.02"/></geometry>
+      <material name="skin"/>
+    </visual>
+    <collision><geometry><box size="0.09 0.09 0.02"/></geometry></collision>
+    <inertial>
+      <mass value="0.2"/>
+      <inertia ixx="0.0005" ixy="0" ixz="0" iyy="0.0005" iyz="0" izz="0.0005"/>
+    </inertial>
+  </link>
+
+  <!-- finger1 -->
+  <link name="finger1">
+    <visual><origin xyz="0 0.035 0"/><geometry><box size="0.015 0.07 0.015"/></geometry><material name="dark"/></visual>
+    <collision><origin xyz="0 0.035 0"/><geometry><box size="0.015 0.07 0.015"/></geometry></collision>
+    <inertial><mass value="0.02"/><inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/></inertial>
+  </link>
+  <joint name="finger1_joint" type="revolute">
+    <parent link="palm"/><child link="finger1"/>
+    <origin xyz="-0.036 0.045 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5708" effort="1" velocity="2"/>
+  </joint>
+
+  <!-- finger2 -->
+  <link name="finger2">
+    <visual><origin xyz="0 0.035 0"/><geometry><box size="0.015 0.07 0.015"/></geometry><material name="dark"/></visual>
+    <collision><origin xyz="0 0.035 0"/><geometry><box size="0.015 0.07 0.015"/></geometry></collision>
+    <inertial><mass value="0.02"/><inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/></inertial>
+  </link>
+  <joint name="finger2_joint" type="revolute">
+    <parent link="palm"/><child link="finger2"/>
+    <origin xyz="-0.018 0.045 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5708" effort="1" velocity="2"/>
+  </joint>
+
+  <!-- finger3 -->
+  <link name="finger3">
+    <visual><origin xyz="0 0.035 0"/><geometry><box size="0.015 0.07 0.015"/></geometry><material name="dark"/></visual>
+    <collision><origin xyz="0 0.035 0"/><geometry><box size="0.015 0.07 0.015"/></geometry></collision>
+    <inertial><mass value="0.02"/><inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/></inertial>
+  </link>
+  <joint name="finger3_joint" type="revolute">
+    <parent link="palm"/><child link="finger3"/>
+    <origin xyz="0 0.045 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5708" effort="1" velocity="2"/>
+  </joint>
+
+  <!-- finger4 -->
+  <link name="finger4">
+    <visual><origin xyz="0 0.032 0"/><geometry><box size="0.014 0.064 0.014"/></geometry><material name="dark"/></visual>
+    <collision><origin xyz="0 0.032 0"/><geometry><box size="0.014 0.064 0.014"/></geometry></collision>
+    <inertial><mass value="0.018"/><inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/></inertial>
+  </link>
+  <joint name="finger4_joint" type="revolute">
+    <parent link="palm"/><child link="finger4"/>
+    <origin xyz="0.018 0.045 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5708" effort="1" velocity="2"/>
+  </joint>
+
+  <!-- finger5 -->
+  <link name="finger5">
+    <visual><origin xyz="0 0.026 0"/><geometry><box size="0.013 0.05 0.013"/></geometry><material name="dark"/></visual>
+    <collision><origin xyz="0 0.026 0"/><geometry><box size="0.013 0.05 0.013"/></geometry></collision>
+    <inertial><mass value="0.015"/><inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/></inertial>
+  </link>
+  <joint name="finger5_joint" type="revolute">
+    <parent link="palm"/><child link="finger5"/>
+    <origin xyz="0.036 0.042 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5708" effort="1" velocity="2"/>
+  </joint>
+
+</robot>
